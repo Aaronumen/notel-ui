@@ -1,0 +1,22 @@
+{
+  "name": "@notel/plugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/notel.plugins.umd.js",
+  "module": "dist/notel.plugins.es.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports":{
+    ".":{
+      "import":"./dist/notel.plugins.es.js",
+      "require":"./dist/notel.plugins.umd.js"
+    }
+  },
+  "private":"false",
+  "scripts": {
+    "build":"vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

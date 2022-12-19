@@ -1,0 +1,16 @@
+{
+  "name": "@notel/client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notel/notel-ui": "workspace:*"
+  }
+}

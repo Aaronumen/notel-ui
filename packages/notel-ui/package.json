@@ -1,0 +1,30 @@
+{
+  "name": "@notel/notel-ui",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/notel.umd.js",
+  "module": "dist/notel.es.js",
+  "types": "dist/index.d.ts",
+  "private":true,
+  "exports": {
+    ".": {
+      "import": "./dist/notel.es.js",
+      "require": "./dist/notel.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "build": "vue-tsc && vite build",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@notel/plugins": "workspace:*"
+  }
+}
