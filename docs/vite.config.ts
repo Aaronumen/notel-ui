@@ -3,12 +3,12 @@ import AutoImport from "unplugin-auto-import/vite"
 import path from "path"
 import vueJsx from "@vitejs/plugin-vue-jsx"
 import autoprefixer from 'autoprefixer'
-import autoName from '../plugins/vite-auto-name-plugin'
+import {viteAutoName} from '@notel/plugins'
 import postCssPxToRem from 'postcss-pxtorem'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    autoName(),
+    viteAutoName(),
     vueJsx({}),
     AutoImport({
       include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/, /\.md$/],
