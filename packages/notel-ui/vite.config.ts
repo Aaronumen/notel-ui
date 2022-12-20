@@ -5,7 +5,7 @@ import path from "path"
 import commpressPlugin from "vite-plugin-compression"
 import vueJsx from "@vitejs/plugin-vue-jsx"
 import autoprefixer from 'autoprefixer'
-import {viteAutoName} from '@notel/plugins'
+import {viteAutoName,viteBuildLogTime} from '@notel/plugins'
 import vitePluginDts from 'vite-plugin-dts'
 import postCssPxToRem from 'postcss-pxtorem'
 // https://vitejs.dev/config/
@@ -13,11 +13,12 @@ export default defineConfig({
   plugins: [
     vue(),
     viteAutoName(),
+    viteBuildLogTime(),
     vitePluginDts({
       outputDir:'dist',
       staticImport:true,
       insertTypesEntry:true,
-      exclude:['auto-imports.d.ts','components.d.ts']
+      exclude:['auto-imports.d.ts','components.d.ts','notel-env.d.ts']
     }),
     vueJsx({}),
     AutoImport({
@@ -32,15 +33,7 @@ export default defineConfig({
         globalsPropValue: true // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
       },
       dts: "./auto-imports.d.ts"
-    }),
-    commpressPlugin({
-      verbose: true, // 默认即可
-      disable: false, //开启压缩(不禁用)，默认即可
-      deleteOriginFile: false, //删除源文件
-      threshold: 10240, //压缩前最小文件大小
-      algorithm: "gzip", //压缩算法
-      ext: ".gz" //文件类型
-    }),
+    })
   ],
   css: {
     postcss:{
