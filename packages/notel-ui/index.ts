@@ -10,9 +10,7 @@ const NotelUi = {
     app.component("NotelTsx", NotelTsx)
   }
 }
-
-console.log(111111111)
-
+const b=
 export { NotelButton, NotelInput, NotelTsx }
 
 export default NotelUi
