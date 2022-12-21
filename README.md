@@ -1,5 +1,10 @@
 ## notel-ui 组件库
 
+### 启动项目前准备
+1. pnpm 包管理器
+2. pnpm i -安装所有依赖
+3. pnpm all:build 对所有依赖进行一次打包
+
 ### 采用 pnpm + vite +ts +vue3 + monorepo
 
 - packages 存放所以项目的文件夹
