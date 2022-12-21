@@ -23,7 +23,7 @@
     "vue": "^3.2.41"
   },
   "lint-staged": {
-    "packages/**/*/*.{js,json,vue,ts,tsx}": [
+    "*.{js,json,vue,ts,tsx}": [
       "prettier --write",
       "pnpm lint"
     ]
