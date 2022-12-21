@@ -11,11 +11,17 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "removeComments": true,//编译去除注释
+    "removeComments": true, //编译去除注释
     "noEmit": true,
-    "baseUrl": "./",
+    "baseUrl": "./"
   },
-  "declaration":true,
-  "include": ["./*.ts","./*.d.ts","./components/**/*.vue","./auto-imports.d.ts"],
-  "exclude": ["node_moduls/**"],
+  "declaration": true,
+  "include": [
+    "./*.ts",
+    "./*.d.ts",
+    "./components/**/*.vue",
+    "./auto-imports.d.ts",
+    "types/*.d.ts"
+  ],
+  "exclude": ["node_moduls/**"]
 }
