@@ -11,6 +11,8 @@ const NotelUi = {
   }
 }
 
+console.log(111111111)
+
 export { NotelButton, NotelInput, NotelTsx }
 
 export default NotelUi
