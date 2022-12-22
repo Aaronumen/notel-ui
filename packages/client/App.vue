@@ -2,10 +2,13 @@
   <div>
     <notel-button color="blue"></notel-button>
     <notel-input></notel-input>
+    <notel-space column-gap="100">
+      <notel-button color="blue">测试1</notel-button>
+      <notel-button color="blue">测试2</notel-button>
+    </notel-space>
   </div>
 </template>
 <script setup lang="ts">
-import { NotelButton } from "@notel/notel-ui"
 console.log(1111)
 </script>
 
