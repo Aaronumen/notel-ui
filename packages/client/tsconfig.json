@@ -13,9 +13,10 @@
     "skipLibCheck": true,
     "removeComments": true, //编译去除注释
     "noEmit": true,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "types": ["@notel/notel-ui/dist/global"]
   },
   "declaration": true,
-  "include": ["*.ts", "../../notel-env.d.ts"],
+  "include": ["*.ts", "../../notel-env.d.ts", "*.vue"],
   "exclude": ["node_moduls/**"]
 }
