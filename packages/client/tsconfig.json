@@ -16,13 +16,6 @@
     "baseUrl": "./"
   },
   "declaration": true,
-  "include": [
-    "./*.ts",
-    "./*.d.ts",
-    "./components/**/*.vue",
-    "./auto-imports.d.ts",
-    "types/*.d.ts",
-    "../../*.d.ts"
-  ],
+  "include": ["*.ts", "../../notel-env.d.ts"],
   "exclude": ["node_moduls/**"]
 }
