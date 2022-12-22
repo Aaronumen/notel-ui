@@ -8,7 +8,7 @@
   "scripts": {
     "client:start": "pnpm --filter=@notel/client start",
     "client:dev": "pnpm --filter=@notel/client dev",
-    "ui:build": "pnpm --filter=@notel/notel-ui build",
+    "ui:build": "pnpm --filter=notel-ui build",
     "plugins:build": "pnpm --filter=@notel/plugins build",
     "docs:start": "vitepress dev docs --open",
     "docs:dev": "vitepress dev docs",

@@ -4,7 +4,7 @@
     <notel-input></notel-input>
     <notel-space column-gap="100">
       <notel-button color="blue">测试1</notel-button>
-      <notel-button color="green">测试2</notel-button>
+      <notel-button color="blue">测试2</notel-button>
     </notel-space>
   </div>
 </template>
