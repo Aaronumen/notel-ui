@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@notel/notel-ui": "workspace:*"
+    "notel-ui": "workspace:*"
   },
   "devDependencies": {
     "@notel/plugins": "workspace:*"
