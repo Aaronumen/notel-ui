@@ -33,7 +33,6 @@
       "path": "node_modules/cz-customizable"
     }
   },
-  "types": "./dist/packages/index.d.ts",
   "devDependencies": {
     "@types/rollup-plugin-visualizer": "^4.2.1",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
