@@ -39,11 +39,7 @@ export default {
             {
               text: "Icon图标",
               link: "/examples/notel-input/",
-            },
-            {
-              text: "Tsx组件",
-              link: "/examples/notel-tsx/",
-            },
+            }
           ],
         },
       ],
