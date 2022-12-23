@@ -10,7 +10,6 @@ const props = withDefaults(
     color: "red"
   }
 )
-console.log(1)
 </script>
 
 <style scoped lang="less">
