@@ -16,8 +16,7 @@
     "docs:serve": "vitepress serve docs",
     "all:build": "pnpm plugins:build && pnpm ui:build && pnpm docs:build",
     "prepare": "husky install",
-    "lint": "eslint . --ext .js,.vue,.ts,.tsx --fix",
-    "preinstall": "npx only-allow pnpm"
+    "lint": "eslint . --ext .js,.vue,.ts,.tsx --fix"
   },
   "dependencies": {
     "vue": "^3.2.41"
