@@ -3,7 +3,5 @@
     <input type="text" />
   </div>
 </template>
-<script setup lang="ts" name="notel-input">
-console.log("test11111111")
-</script>
+<script setup lang="ts" name="notel-input"></script>
 <style lang="less" scoped></style>

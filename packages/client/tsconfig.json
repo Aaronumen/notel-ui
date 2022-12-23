@@ -14,7 +14,7 @@
     "removeComments": true, //编译去除注释
     "noEmit": true,
     "baseUrl": "./",
-    "types": ["@notel/notel-ui/dist/global"]
+    "types": ["notel-ui/dist/global"] //全局导入 notel-ui volar ts 类型支持
   },
   "declaration": true,
   "include": ["*.ts", "../../notel-env.d.ts", "*.vue"],

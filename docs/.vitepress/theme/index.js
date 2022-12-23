@@ -1,10 +1,10 @@
 // .vitepress/theme/index.js
 
-import DefaultTheme from "vitepress/theme";
-import Notel from '@notel/notel-ui'
+import DefaultTheme from "vitepress/theme"
+import Notel from "notel-ui"
 export default {
   ...DefaultTheme,
-  enhanceApp: async ({ app}) => {
+  enhanceApp: async ({ app }) => {
     app.use(Notel)
-  },
-};
+  }
+}

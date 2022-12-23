@@ -8,8 +8,6 @@
     </notel-space>
   </div>
 </template>
-<script setup lang="ts">
-console.log(1111)
-</script>
+<script setup lang="ts"></script>
 
 <style scoped></style>

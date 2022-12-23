@@ -18,10 +18,7 @@ module.exports = {
   plugins: ["vue", "@typescript-eslint"],
   rules: {
     "@typescript-eslint/no-explicit-any": ["off"], //允许ts定义any
-    "vue/multi-word-component-names":["off"]
-    // "@typescript-eslint/no-empty-function": ["off"],
-    // "@typescript-eslint/no-unused-vars": ["off"],
-    // "@typescript-eslint/no-this-alias": ["off"],
-    // "@typescript-eslint/no-unused-vars": ["off"]
+    "vue/multi-word-component-names": ["off"],
+    "@typescript-eslint/no-non-null-assertion": ["off"] //允许非空断言
   }
 }

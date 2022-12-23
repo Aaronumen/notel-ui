@@ -3,14 +3,14 @@ import vue from "@vitejs/plugin-vue"
 import AutoImport from "unplugin-auto-import/vite"
 import path from "path"
 import autoprefixer from "autoprefixer"
-import { viteAutoName, viteBuildLogTime } from "@notel/plugins"
+import { vitePluginVueName, viteBuildLogTime } from "@notel/plugins"
 import vitePluginDts from "vite-plugin-dts"
 import postCssPxToRem from "postcss-pxtorem"
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    viteAutoName(),
+    vitePluginVueName(),
     viteBuildLogTime(),
     vitePluginDts({
       outputDir: "dist",

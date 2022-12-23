@@ -1,10 +1,10 @@
 import type { Plugin } from "vite"
 //@vue/compiler-sfc 这个插件是处理我们单文件组件的代码解析
-import { compileScript, parse } from "vue/compiler-sfc"
+import { parse } from "vue/compiler-sfc"
 
-export const viteAutoName = (): Plugin => {
+export const vitePluginVueName = (): Plugin => {
   return {
-    name: "vite:plugin:vue:name",
+    name: "vite-plugin-vue-auto-name-inheritAttrs",
     //一个 Vite 插件可以额外指定一个 `enforce` 属性
     //（类似于 webpack 加载器）来调整它的应用顺序。`enforce` 的值可以是`pre` 或 `post`
     //加载顺序为
@@ -21,14 +21,19 @@ export const viteAutoName = (): Plugin => {
       //只处理vue结尾的文件
       if (/.vue$/.test(id)) {
         const { descriptor } = parse(code)
-        const { script, scriptSetup } = descriptor
-        if (script || scriptSetup === null) return
-        // console.log("descriptor: ", descriptor)
-        const result = compileScript(descriptor, { id })
-        //attrs 此时就是一个对象
-        const name = result.attrs.name
-        const lang = result.attrs.lang
-        const inheritAttrs = result.attrs.inheritAttrs
+        const { source } = descriptor
+        const matchRule = {
+          name: /(?<=(script setup[^>]*name="))[^"]*/g,
+          lang: /(?<=(script setup[^>]*lang="))[^"]*/g,
+          inheritAttrs: /(?<=(script setup[^>]*inheritAttrs="))[^"]*/g
+        }
+        const name =
+          source.match(matchRule.name) && source.match(matchRule.name)![0]
+        const lang =
+          source.match(matchRule.lang) && source.match(matchRule.lang)![0]
+        const inheritAttrs =
+          source.match(matchRule.inheritAttrs) &&
+          source.match(matchRule.inheritAttrs)![0]
         //写入script
         const template = `
                 <script ${lang ? `lang=${lang}` : ""}>
@@ -45,7 +50,6 @@ export const viteAutoName = (): Plugin => {
         //最后拼接上这段代码 也就是我们加的script这一段 返回code
         code += template
       }
-
       return code
     }
   }
