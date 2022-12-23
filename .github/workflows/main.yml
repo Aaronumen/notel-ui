@@ -26,7 +26,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.vitepress-docs }}
+          ACCESS_TOKEN: ${{ secrets.Token }}
           REPOSITORY_NAME: Aaronumen/notel-ui-doc
           BRANCH: main
           FOLDER: docs/.vitepress/dist
