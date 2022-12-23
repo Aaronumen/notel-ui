@@ -12,7 +12,7 @@
 
 ### pnpm workspace
     详细看根目录下 `pnpm-workspace.yaml`
-    目前存在的workspac:
+    目前存在的workspace:
         - packages 下面所有的项目
         - docs
 

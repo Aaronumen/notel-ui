@@ -21,9 +21,7 @@
     "./*.d.ts",
     "./components/*.ts",
     "./components/**/*.vue",
-    "./components/**/*.tsx",
-    "./auto-imports.d.ts",
-    "types/*.d.ts"
+    "./components/**/*.tsx"
   ],
   "exclude": ["node_moduls/**"]
 }
