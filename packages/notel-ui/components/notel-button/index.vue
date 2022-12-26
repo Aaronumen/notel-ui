@@ -1,5 +1,5 @@
 <template>
-  <button :style="{ color }" class="notel-button">测试</button>
+  <button :style="{ color }" class="notel-button" type="button">测试</button>
 </template>
 <script setup lang="ts" name="notel-button" inheritAttrs="false">
 const props = withDefaults(
