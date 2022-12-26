@@ -1,6 +1,6 @@
 {
   "name": "vue3-vite-ui-template",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "engines": {
     "node": ">= 16"

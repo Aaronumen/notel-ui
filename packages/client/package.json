@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private":true,
   "scripts": {
     "dev": "vite",
-    "start": "vite --open",
-    "build": "vite build"
+    "start": "vite --open"
   },
   "keywords": [],
   "author": "",
