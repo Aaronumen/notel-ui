@@ -14,7 +14,16 @@ export default defineConfig({
     lib: {
       entry: "./index.ts",
       name: "notel-plugins",
-      fileName: format => `notel.plugins.${format}.js`
+      fileName: format => `notel.plugins.${format}.js`,
+    },
+    rollupOptions:{
+      external:['vite','vue/compiler-sfc'],
+      output:{
+        globals:{
+          'vite':'vite',
+          'vue/compiler-sfc':'vue/compiler-sfc'
+        }
+      }
     }
   }
 })
