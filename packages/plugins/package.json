@@ -1,22 +1,23 @@
 {
   "name": "@notel/plugins",
   "version": "1.0.0",
-  "description": "",
+  "description": "vite-rollup-plugins",
   "main": "dist/notel.plugins.umd.js",
   "module": "dist/notel.plugins.es.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "files": ["dist"],
   "exports":{
     ".":{
       "import":"./dist/notel.plugins.es.js",
       "require":"./dist/notel.plugins.umd.js"
     }
   },
-  "private":"false",
+  "private":false,
   "scripts": {
     "build":"vite build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["vite","rollup","plugin"],
+  "author": "aaronumen",
   "license": "ISC"
 }

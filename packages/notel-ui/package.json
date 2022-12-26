@@ -6,7 +6,7 @@
   "main": "dist/notel.umd.js",
   "module": "dist/notel.es.js",
   "types": "dist/index.d.ts",
-  "private": true,
+  "private": false,
   "exports": {
     ".": {
       "import": "./dist/notel.es.js",
@@ -24,7 +24,7 @@
     "vue3",
     "ui"
   ],
-  "author": "",
+  "author": "aaronumen",
   "license": "ISC",
   "files": [
     "dist"
