@@ -76,8 +76,10 @@ importers:
 
   packages/client:
     specifiers:
+      '@notel/plugins': workspace:*
       notel-ui: workspace:*
     dependencies:
+      '@notel/plugins': link:../plugins
       notel-ui: link:../notel-ui
 
   packages/notel-ui:

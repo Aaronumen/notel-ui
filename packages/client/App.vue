@@ -1,13 +1,18 @@
 <template>
-  <div>
+  <div class="scroll">
     <notel-button color="blue"></notel-button>
     <notel-input name="测试"></notel-input>
-    <notel-space column-gap="100">
-      <notel-button color="blue">测试1</notel-button>
-      <notel-button color="blue">测试2</notel-button>
-    </notel-space>
+    <div tabindex="0" v-focus>测试</div>
   </div>
 </template>
 <script setup lang="ts"></script>
 
-<style scoped></style>
+<style scoped>
+.scroll {
+  height: 300px;
+  overflow: scroll;
+}
+.test {
+  height: 300px;
+}
+</style>
