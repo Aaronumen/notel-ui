@@ -13,7 +13,7 @@ export default defineConfig({
     vitePluginVueName(),
     viteBuildLogTime(),
     vitePluginDts({
-      outputDir: "dist",
+      outDir: "dist",
       staticImport: true,
       insertTypesEntry: true,
       exclude: ["notel-env.d.ts"]

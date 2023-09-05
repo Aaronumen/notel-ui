@@ -4,7 +4,7 @@ import vitePluginDts from "vite-plugin-dts"
 export default defineConfig({
   plugins: [
     vitePluginDts({
-      outputDir: "dist",
+      outDir: "dist",
       staticImport: true,
       insertTypesEntry: true
     })
